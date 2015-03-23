@@ -160,7 +160,7 @@ public class LuceneIndex {
      * @param term The {@link Term} to identify the documents to be deleted.
      */
     public void delete(Term term) {
-        Log.debug(String.format("Deleting by term %s", term));
+        Log.debug("Deleting by term %s", term);
         try {
             indexWriter.deleteDocuments(term);
         } catch (IOException e) {
